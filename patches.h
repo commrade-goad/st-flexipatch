@@ -328,7 +328,7 @@
  * https://codeberg.org/dnkl/foot/wiki#spawning-new-terminal-instances-in-the-current-working-directory
  * https://github.com/veltza/st-sx/commit/817865c2c6ed905af8849580e58bdcf399216fbd
  */
-#define OSC7_PATCH 0
+#define OSC7_PATCH 1
 
 /* This patch allows jumping between prompts by utilizing the OSC 133 escape sequence
  * emitted by shells. Must be used with either reflow or scrollback patch.
@@ -359,13 +359,13 @@
 /* Scroll back through terminal output using Shift+{PageUp, PageDown}.
  * https://st.suckless.org/patches/scrollback/
  */
-#define SCROLLBACK_PATCH 0
+#define SCROLLBACK_PATCH 1
 
 /* Scroll back through terminal output using Shift+MouseWheel.
  * This variant depends on SCROLLBACK_PATCH being enabled.
  * https://st.suckless.org/patches/scrollback/
  */
-#define SCROLLBACK_MOUSE_PATCH 0
+#define SCROLLBACK_MOUSE_PATCH 1
 
 /* Scroll back through terminal output using mouse wheel (when not in MODE_ALTSCREEN).
  * This variant depends on SCROLLBACK_PATCH being enabled.
