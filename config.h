@@ -187,38 +187,38 @@ char *xdndescchar = " !\"#$&'()*;<>?[\\]^`{|}~";
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#8A8A8A",  /* 0: black   */
-	"#C4B0B0",  /* 1: red     */
-	"#B0C4B0",  /* 2: green   */
-	"#C4C4B0",  /* 3: yellow  */
-	"#B0B0C4",  /* 4: blue    */
-	"#C4B0C4",  /* 5: magenta */
-	"#B0C4C4",  /* 6: cyan    */
-	"#D1D1D1",  /* 7: white   */
+	"#4F585E",  /* 0: black   */
+	"#E67E80",  /* 1: red     */
+	"#A7C080",  /* 2: green   */
+	"#DBBC7F",  /* 3: yellow  */
+	"#7FBBB3",  /* 4: blue    */
+	"#D699B6",  /* 5: magenta */
+	"#83C092",  /* 6: cyan    */
+	"#A09682",  /* 7: white   */
 
 	/* 8 bright colors */
-	"#A0A0A0",  /* 8: black   */
-	"#D0B8B8",  /* 9: red     */
-	"#B8D0B8",  /* 10: green  */
-	"#D0D0B8",  /* 11: yellow */
-	"#B8B8D0",  /* 12: blue   */
-	"#D0B8D0",  /* 13: magenta */
-	"#B8D0D0",  /* 14: cyan   */
-	"#E0E0E0",  /* 15: white  */
+	"#7A8478",  /* 8: black   */
+	"#E67E80",  /* 9: red     */
+	"#A7C080",  /* 10: green  */
+	"#DBBC7F",  /* 11: yellow */
+	"#7FBBB3",  /* 12: blue   */
+	"#D699B6",  /* 13: magenta */
+	"#83C092",  /* 14: cyan   */
+	"#BAAE96",  /* 15: white  */
 
 	[255] = 0,
 
 	/* Custom colors */
-	"#FaFaFa", /* 256: default foreground */
-	"#1E1E1E", /* 257: default background */
-	"#6E6E6E", /* 258: dim black */
-	"#3A2E2E", /* 259: dim red */
-	"#2E3A2E", /* 260: dim green */
-	"#3A3A2E", /* 261: dim yellow */
-	"#2E2E3A", /* 262: dim blue */
-	"#3A2E3A", /* 263: dim magenta */
-	"#2E3A3A", /* 264: dim cyan */
-	"#2E2E2E", /* 265: dim white */
+	"#D3C6AA", /* 256: default foreground */
+	"#2D353B", /* 257: default background */
+	"#3D484D", /* 258: dim black */
+	"#E67E80", /* 259: dim red */
+	"#A7C080", /* 260: dim green */
+	"#DBBC7F", /* 261: dim yellow */
+	"#7FBBB3", /* 262: dim blue */
+	"#D699B6", /* 263: dim magenta */
+	"#83C092", /* 264: dim cyan */
+	"#877F6D", /* 265: dim white */
 };
 
 /*
