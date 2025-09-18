@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
+static char *font = "IosevkaTerm Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
 #if FONT2_PATCH
 /* Spare fonts */
 static char *font2[] = {
@@ -186,39 +186,32 @@ char *xdndescchar = " !\"#$&'()*;<>?[\\]^`{|}~";
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#4F585E",  /* 0: black   */
-	"#E67E80",  /* 1: red     */
-	"#A7C080",  /* 2: green   */
-	"#DBBC7F",  /* 3: yellow  */
-	"#7FBBB3",  /* 4: blue    */
-	"#D699B6",  /* 5: magenta */
-	"#83C092",  /* 6: cyan    */
-	"#A09682",  /* 7: white   */
+    "black",
+    "red3",
+    "green3",
+    "yellow3",
+    "blue2",
+    "magenta3",
+    "cyan3",
+    "gray90",
 
-	/* 8 bright colors */
-	"#7A8478",  /* 8: black   */
-	"#E67E80",  /* 9: red     */
-	"#A7C080",  /* 10: green  */
-	"#DBBC7F",  /* 11: yellow */
-	"#7FBBB3",  /* 12: blue   */
-	"#D699B6",  /* 13: magenta */
-	"#83C092",  /* 14: cyan   */
-	"#BAAE96",  /* 15: white  */
+    "gray50",
+    "red",
+    "green",
+    "yellow",
+    "#5c5cff",
+    "magenta",
+    "cyan",
+    "white",
+
+
 
 	[255] = 0,
+    "#add8e6", /* 256 -> cursor */
+    "#555555", /* 257 -> rev cursor*/
+    "#000000", /* 258 -> bg */
+    "#e5e5e5", /* 259 -> fg */
 
-	/* Custom colors */
-	"#D3C6AA", /* 256: default foreground */
-	"#2D353B", /* 257: default background */
-	"#3D484D", /* 258: dim black */
-	"#E67E80", /* 259: dim red */
-	"#A7C080", /* 260: dim green */
-	"#DBBC7F", /* 261: dim yellow */
-	"#7FBBB3", /* 262: dim blue */
-	"#D699B6", /* 263: dim magenta */
-	"#83C092", /* 264: dim cyan */
-	"#877F6D", /* 265: dim white */
 };
 
 /*
@@ -229,9 +222,9 @@ static const char *colorname[] = {
 unsigned int defaultbg = 0;
 unsigned int bg = 17, bgUnfocused = 16;
 #else
-unsigned int defaultbg = 257;
+unsigned int defaultbg = 258;
 #endif // ALPHA_FOCUS_HIGHLIGHT_PATCH
-unsigned int defaultfg = 256;
+unsigned int defaultfg = 259;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
 #if SELECTION_COLORS_PATCH
